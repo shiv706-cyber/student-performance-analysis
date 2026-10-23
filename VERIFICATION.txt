@@ -1,0 +1,98 @@
+Verification performed while preparing this project.
+
+Main program exit code: 0
+Test suite exit code: 0
+
+Test output:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_dataset_has_twenty_records (test_functions.StudentAnalyticsTests.test_dataset_has_twenty_records) ... ok
+test_grade_boundaries (test_functions.StudentAnalyticsTests.test_grade_boundaries) ... ok
+test_pass_requires_marks_and_attendance (test_functions.StudentAnalyticsTests.test_pass_requires_marks_and_attendance) ... ok
+test_subject_analysis_has_four_rows (test_functions.StudentAnalyticsTests.test_subject_analysis_has_four_rows) ... ok
+test_summary_counts_are_consistent (test_functions.StudentAnalyticsTests.test_summary_counts_are_consistent) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.026s
+
+OK
+
+
+Main program output (first 120 lines):
+
+================================================================
+       STUDENT PERFORMANCE ANALYTICS SYSTEM
+================================================================
+Students analysed       : 20
+Overall class average  : 73.97/100
+Highest student average: 92.50/100
+Lowest student average : 49.00/100
+Pass / Fail             : 17 / 3
+Pass percentage         : 85.00%
+Average attendance      : 86.35%
+
+SUBJECT-WISE ANALYSIS
+      Subject  Average  Highest  Lowest  Std_Deviation
+       Python    70.95     95.0    39.0          16.14
+  Mathematics    73.85     95.0    42.0          14.30
+   Statistics    73.65     94.0    49.0          13.74
+Communication    77.45     92.0    59.0          10.04
+
+DEPARTMENT-WISE ANALYSIS
+Department  Students  Average_Marks  Pass_Count  Pass_Percentage
+       CSE         7          74.93           6            85.71
+       ECE         5          72.80           5           100.00
+        IT         5          77.90           4            80.00
+        ME         3          67.17           2            66.67
+
+TOP 5 PERFORMERS
+ Rank Student_ID         Name Department  Average_Marks Grade
+    1     STU010     Myra Das         IT          92.50    A+
+    2     STU004   Diya Singh         IT          91.75    A+
+    3     STU016     Sara Ali        ECE          90.00    A+
+    4     STU012  Aadhya Nair        CSE          87.25     A
+    5     STU001 Aarav Sharma        CSE          85.75     A
+
+STUDENT RESULT SUMMARY
+Student_ID          Name  Total_Marks  Average_Marks Grade  Attendance Result
+    STU010      Myra Das          370          92.50    A+          98   Pass
+    STU004    Diya Singh          367          91.75    A+          97   Pass
+    STU016      Sara Ali          360          90.00    A+          95   Pass
+    STU012   Aadhya Nair          349          87.25     A          96   Pass
+    STU001  Aarav Sharma          343          85.75     A          94   Pass
+    STU018  Kiara Kapoor          336          84.00     A          92   Pass
+    STU015   Dhruv Mehta          328          82.00     A          90   Pass
+    STU002  Ananya Verma          321          80.25     A          89   Pass
+    STU006    Isha Patel          321          80.25     A          91   Pass
+    STU008 Saanvi Mishra          318          79.50     B          93   Pass
+    STU020   Navya Reddy          290          72.50     B          86   Pass
+    STU013    Kabir Khan          289          72.25     B          84   Pass
+    STU009   Arjun Joshi          279          69.75     C          72   Fail
+    STU003  Vihaan Gupta          277          69.25     C          82   Pass
+    STU014   Pari Chawla          249          62.25     C          77   Pass
+    STU005  Aditya Kumar          244          61.00     C          76   Pass
+    STU007 Reyansh Yadav          236          59.00     D          88   Fail
+    STU019   Atharv Jain          234          58.50     D          80   Pass
+    STU011   Krishna Rao          211          52.75     D          79   Pass
+    STU017  Rohan Thakur          196          49.00     F          68   Fail
+
+Reports saved to: /mnt/data/student-performance-analytics/reports
+Generated: student_results.csv, subject_analysis.csv, department_analysis.csv
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
